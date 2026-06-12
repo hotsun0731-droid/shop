@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MAISON — 감각적인 라이프스타일 쇼핑</title>
+  <meta name="description" content="30대 여성을 위한 세련된 패션 & 라이프스타일 쇼핑몰">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">
+    <p>봄 시즌 신상 20% 할인 · 5만원 이상 무료배송</p>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <button class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+
+      <a href="#" class="logo">MAISON</a>
+
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#new">신상품</a>
+        <a href="#categories">카테고리</a>
+        <a href="#products">베스트</a>
+        <a href="#story">브랜드</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="검색">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="7"/><path d="M20 20l-3-3"/>
+          </svg>
+        </button>
+        <button class="icon-btn cart-btn" aria-label="장바구니">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/>
+          </svg>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="hero-tag">Spring Collection 2026</span>
+        <h1>일상에 스며드는<br><em>우아한 감각</em></h1>
+        <p>섬세한 디테일과 편안한 실루엣으로 완성한 봄 컬렉션.<br>당신의 하루를 더 특별하게.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">컬렉션 보기</a>
+          <a href="#new" class="btn btn-ghost">신상품 둘러보기</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=800&q=80" alt="봄 컬렉션 룩북">
+        </div>
+        <div class="hero-accent"></div>
+      </div>
+    </section>
+
+    <section class="trust-bar">
+      <div class="trust-item">
+        <span class="trust-icon">✦</span>
+        <span>무료 반품</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✦</span>
+        <span>당일 출고</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✦</span>
+        <span>프리미엄 포장</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">✦</span>
+        <span>1:1 스타일링 상담</span>
+      </div>
+    </section>
+
+    <section id="categories" class="categories">
+      <div class="section-header">
+        <span class="section-label">Categories</span>
+        <h2>취향별로 찾아보세요</h2>
+      </div>
+      <div class="category-grid">
+        <a href="#products" class="category-card category-large" data-filter="outer">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&q=80" alt="아우터">
+          <div class="category-overlay">
+            <h3>아우터</h3>
+            <span>12 items</span>
+          </div>
+        </a>
+        <a href="#products" class="category-card" data-filter="top">
+          <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&q=80" alt="탑">
+          <div class="category-overlay">
+            <h3>탑</h3>
+            <span>24 items</span>
+          </div>
+        </a>
+        <a href="#products" class="category-card" data-filter="bag">
+          <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400&q=80" alt="백">
+          <div class="category-overlay">
+            <h3>백</h3>
+            <span>18 items</span>
+          </div>
+        </a>
+        <a href="#products" class="category-card" data-filter="acc">
+          <img src="https://images.unsplash.com/photo-1611591437281-460bf47d4b1c?w=400&q=80" alt="액세서리">
+          <div class="category-overlay">
+            <h3>액세서리</h3>
+            <span>31 items</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section id="new" class="featured">
+      <div class="featured-inner">
+        <div class="featured-text">
+          <span class="section-label">New Arrivals</span>
+          <h2>이번 주<br>주목할 신상</h2>
+          <p>부드러운 텍스처와 절제된 컬러로 완성한 시즌 에센셜. 매일 손이 가는 아이템들.</p>
+          <a href="#products" class="link-arrow">전체 보기 →</a>
+        </div>
+        <div class="featured-products" id="featured-products"></div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="section-header section-header-row">
+        <div>
+          <span class="section-label">Best Sellers</span>
+          <h2>베스트 셀러</h2>
+        </div>
+        <div class="filter-tabs" role="tablist">
+          <button class="filter-tab active" data-filter="all" role="tab">전체</button>
+          <button class="filter-tab" data-filter="outer" role="tab">아우터</button>
+          <button class="filter-tab" data-filter="top" role="tab">탑</button>
+          <button class="filter-tab" data-filter="bag" role="tab">백</button>
+          <button class="filter-tab" data-filter="acc" role="tab">액세서리</button>
+        </div>
+      </div>
+      <div class="price-filter">
+        <div class="price-filter-header">
+          <span class="price-filter-label">가격대</span>
+          <span class="price-filter-value" id="price-range-display"></span>
+        </div>
+        <div class="price-slider">
+          <div class="price-slider-track">
+            <div class="price-slider-range" id="price-slider-range"></div>
+          </div>
+          <input type="range" id="price-min" aria-label="최소 가격">
+          <input type="range" id="price-max" aria-label="최대 가격">
+        </div>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <section class="editorial">
+      <div class="editorial-image">
+        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=900&q=80" alt="에디토리얼">
+      </div>
+      <div class="editorial-content">
+        <span class="section-label">Editorial</span>
+        <h2>나만의 스타일,<br>천천히 쌓아가기</h2>
+        <p>트렌드를 좇기보다 나에게 어울리는 것을 선택하는 것. MAISON은 시간이 지나도 사랑받는 클래식한 아이템을 제안합니다.</p>
+        <a href="#story" class="btn btn-outline">스토리 읽기</a>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="story-content">
+        <span class="section-label">Our Story</span>
+        <h2>MAISON</h2>
+        <p class="story-lead">"좋은 옷은 하루의 기분을 바꿉니다."</p>
+        <p>2019년, 작은 아틀리에에서 시작한 MAISON은 30대 여성의 라이프스타일에 맞춘 감각적인 패션과 라이프 아이템을 선보입니다. 품질, 지속 가능성, 그리고 아름다움 — 세 가지 가치를 모두 담았습니다.</p>
+        <div class="story-stats">
+          <div><strong>50K+</strong><span>고객</span></div>
+          <div><strong>4.9</strong><span>평점</span></div>
+          <div><strong>120+</strong><span>브랜드</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter-inner">
+        <h2>뉴스레터 구독</h2>
+        <p>신상품 소식과 멤버 전용 혜택을 가장 먼저 받아보세요.</p>
+        <form class="newsletter-form" id="newsletter-form">
+          <input type="email" placeholder="이메일 주소" required aria-label="이메일">
+          <button type="submit" class="btn btn-primary">구독하기</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">MAISON</a>
+        <p>감각적인 라이프스타일을 위한<br>프리미엄 쇼핑 경험</p>
+      </div>
+      <div class="footer-links">
+        <h4>쇼핑</h4>
+        <a href="#new">신상품</a>
+        <a href="#products">베스트</a>
+        <a href="#categories">카테고리</a>
+      </div>
+      <div class="footer-links">
+        <h4>고객센터</h4>
+        <a href="#">FAQ</a>
+        <a href="#">배송 안내</a>
+        <a href="#">반품/교환</a>
+      </div>
+      <div class="footer-links">
+        <h4>연락처</h4>
+        <a href="mailto:hello@maison.co.kr">hello@maison.co.kr</a>
+        <a href="tel:1588-0000">1588-0000</a>
+        <span>평일 10:00 – 18:00</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MAISON. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <aside class="cart-drawer" aria-hidden="true">
+    <div class="cart-overlay"></div>
+    <div class="cart-panel">
+      <div class="cart-header">
+        <h3>장바구니</h3>
+        <button class="cart-close" aria-label="장바구니 닫기">×</button>
+      </div>
+      <div class="cart-items" id="cart-items">
+        <p class="cart-empty">장바구니가 비어 있습니다.</p>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>합계</span>
+          <strong id="cart-total">₩0</strong>
+        </div>
+        <button class="btn btn-primary btn-full" disabled>결제하기</button>
+      </div>
+    </div>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="cart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
